@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><jdbcDataAdapter class="net.sf.jasperreports.data.jdbc.JdbcDataAdapterImpl"><name>AGENAL development</name><driver>org.postgresql.Driver</driver><username>agenal</username><password>development</password><savePassword>true</savePassword><url>jdbc:postgresql://181.115.181.116:5432/agenal</url><database/><serverAddress/></jdbcDataAdapter>

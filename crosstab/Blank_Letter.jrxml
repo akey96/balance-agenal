@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_Letter" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8e9a8fb3-919b-46bc-94d4-0dd60a122244">
+	<property name="com.jaspersoft.studio.data.sql.tables" value="cHJvZHVjdG8gLDE1LDE1LDZiZTcwMzY2LTlkODktNDFmMS05MjFkLTc3NTUzMWYzOWEzNTs="/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Crosstab DB Conecction Fruta "/>
+	<style name="Crosstab_CH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab_CG" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab_CT" mode="Opaque" backcolor="#005FB3">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab_CD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Dataset1" uuid="c73cbcb8-c8ad-4544-a208-448fe1f3f578">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Crosstab DB Conecction Fruta "/>
+		<queryString language="SQL">
+			<![CDATA[select IdProducto, NombreProducto, Proveedor, Categoria, CantidadPorUnidad, PrecioUnidad, date_format(fecha, '%Y') as fechas from producto group by fechas]]>
+		</queryString>
+		<field name="IdProducto" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.name" value="IdProducto"/>
+			<property name="com.jaspersoft.studio.field.label" value="IdProducto"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="producto"/>
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="NombreProducto" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="NombreProducto"/>
+			<property name="com.jaspersoft.studio.field.label" value="NombreProducto"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="producto"/>
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="Proveedor" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="Proveedor"/>
+			<property name="com.jaspersoft.studio.field.label" value="Proveedor"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="producto"/>
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="Categoria" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="Categoria"/>
+			<property name="com.jaspersoft.studio.field.label" value="Categoria"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="producto"/>
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="CantidadPorUnidad" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="CantidadPorUnidad"/>
+			<property name="com.jaspersoft.studio.field.label" value="CantidadPorUnidad"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="producto"/>
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="PrecioUnidad" class="java.lang.Double">
+			<property name="com.jaspersoft.studio.field.name" value="PrecioUnidad"/>
+			<property name="com.jaspersoft.studio.field.label" value="PrecioUnidad"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="producto"/>
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="fechas" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="fechas"/>
+			<property name="com.jaspersoft.studio.field.label" value="fechas"/>
+		</field>
+	</subDataset>
+	<queryString language="SQL">
+		<![CDATA[SELECT IdProducto,
+	NombreProducto,
+	Proveedor,
+	Categoria,
+	CantidadPorUnidad,
+	PrecioUnidad,
+	date_format( fecha,'%Y') AS fechas
+FROM producto
+GROUP BY fechas]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="48" splitType="Stretch"/>
+	</title>
+	<summary>
+		<band height="257" splitType="Stretch">
+			<crosstab>
+				<reportElement x="-10" y="0" width="590" height="250" uuid="0483de15-d86d-464d-8cb4-cc4587b56208">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.crosstab.style.header" value="Crosstab_CH"/>
+					<property name="com.jaspersoft.studio.crosstab.style.group" value="Crosstab_CG"/>
+					<property name="com.jaspersoft.studio.crosstab.style.total" value="Crosstab_CT"/>
+					<property name="com.jaspersoft.studio.crosstab.style.detail" value="Crosstab_CD"/>
+				</reportElement>
+				<crosstabDataset>
+					<dataset resetType="Report">
+						<datasetRun subDataset="Dataset1" uuid="87f18232-e809-487b-8ec9-c9e421b6e158">
+							<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+						</datasetRun>
+					</dataset>
+				</crosstabDataset>
+				<rowGroup name="Categoria" width="140" totalPosition="End">
+					<bucket class="java.lang.String">
+						<bucketExpression><![CDATA[$F{Categoria}]]></bucketExpression>
+					</bucket>
+					<crosstabRowHeader>
+						<cellContents mode="Opaque" style="Crosstab_CH">
+							<textField>
+								<reportElement x="0" y="0" width="140" height="40" uuid="e2a16cfe-afb4-43ec-a3fa-92557a2d4b42"/>
+								<textFieldExpression><![CDATA[$V{Categoria}]]></textFieldExpression>
+							</textField>
+						</cellContents>
+					</crosstabRowHeader>
+					<crosstabTotalRowHeader>
+						<cellContents mode="Opaque" style="Crosstab_CT">
+							<staticText>
+								<reportElement x="0" y="0" width="250" height="20" forecolor="#FFFFFF" uuid="7d8cf7a4-23e5-4aeb-bc1e-e90283123472"/>
+								<text><![CDATA[Total Categoria]]></text>
+							</staticText>
+						</cellContents>
+					</crosstabTotalRowHeader>
+				</rowGroup>
+				<rowGroup name="Proveedor" width="110" totalPosition="End">
+					<bucket class="java.lang.String">
+						<bucketExpression><![CDATA[$F{Proveedor}]]></bucketExpression>
+					</bucket>
+					<crosstabRowHeader>
+						<cellContents mode="Opaque" style="Crosstab_CH">
+							<textField>
+								<reportElement x="0" y="0" width="110" height="20" uuid="9a1279cf-2710-4099-a905-4d2f0858788a"/>
+								<textFieldExpression><![CDATA[$V{Proveedor}]]></textFieldExpression>
+							</textField>
+						</cellContents>
+					</crosstabRowHeader>
+					<crosstabTotalRowHeader>
+						<cellContents mode="Opaque" style="Crosstab_CG">
+							<staticText>
+								<reportElement x="0" y="0" width="110" height="20" uuid="7e25a5e2-dbf8-4b12-aaed-8e5e85da0916"/>
+								<text><![CDATA[Total Proveedor]]></text>
+							</staticText>
+						</cellContents>
+					</crosstabTotalRowHeader>
+				</rowGroup>
+				<columnGroup name="fechas" height="20" totalPosition="End">
+					<bucket class="java.lang.String">
+						<bucketExpression><![CDATA[$F{fechas}]]></bucketExpression>
+					</bucket>
+					<crosstabColumnHeader>
+						<cellContents mode="Opaque" style="Crosstab_CH">
+							<textField>
+								<reportElement x="0" y="0" width="60" height="20" uuid="4fbf0c77-3a13-4fd7-94d3-c9fc7e91c9e3"/>
+								<textFieldExpression><![CDATA[$V{fechas}]]></textFieldExpression>
+							</textField>
+						</cellContents>
+					</crosstabColumnHeader>
+					<crosstabTotalColumnHeader>
+						<cellContents mode="Opaque" style="Crosstab_CT">
+							<staticText>
+								<reportElement x="0" y="0" width="70" height="20" forecolor="#FFFFFF" uuid="b5bea885-db78-4f70-950b-54520326c454"/>
+								<text><![CDATA[Total fechas]]></text>
+							</staticText>
+						</cellContents>
+					</crosstabTotalColumnHeader>
+				</columnGroup>
+				<measure name="IdProducto_MEASURE" class="java.lang.Integer" calculation="Count">
+					<measureExpression><![CDATA[$F{IdProducto}]]></measureExpression>
+				</measure>
+				<crosstabCell width="60" height="20">
+					<cellContents mode="Opaque" style="Crosstab_CD">
+						<textField>
+							<reportElement x="0" y="0" width="60" height="20" uuid="19c55eee-8ceb-447f-9091-b2473c14965e"/>
+							<textFieldExpression><![CDATA[$V{IdProducto_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="70" height="20" columnTotalGroup="fechas">
+					<cellContents mode="Opaque" style="Crosstab_CT">
+						<textField>
+							<reportElement x="0" y="0" width="70" height="20" forecolor="#FFFFFF" uuid="257241be-e365-44d2-8a40-2a5c74d3ee64"/>
+							<textFieldExpression><![CDATA[$V{IdProducto_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="60" height="20" rowTotalGroup="Categoria">
+					<cellContents mode="Opaque" style="Crosstab_CT">
+						<textField>
+							<reportElement x="0" y="0" width="60" height="20" forecolor="#FFFFFF" uuid="f689c739-3c8d-48c3-9f09-81f818d6b3cc"/>
+							<textFieldExpression><![CDATA[$V{IdProducto_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="70" height="20" rowTotalGroup="Categoria" columnTotalGroup="fechas">
+					<cellContents mode="Opaque" style="Crosstab_CT">
+						<textField>
+							<reportElement x="0" y="0" width="70" height="20" forecolor="#FFFFFF" uuid="f6eb8757-728c-48e8-9a7b-948541b7b544"/>
+							<textFieldExpression><![CDATA[$V{IdProducto_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="60" height="20" rowTotalGroup="Proveedor">
+					<cellContents mode="Opaque" style="Crosstab_CG">
+						<textField>
+							<reportElement x="0" y="0" width="60" height="20" uuid="2ff581af-2053-4ec4-b3bc-459e4eed042e"/>
+							<textFieldExpression><![CDATA[$V{IdProducto_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="70" height="20" rowTotalGroup="Proveedor" columnTotalGroup="fechas">
+					<cellContents mode="Opaque" style="Crosstab_CT">
+						<textField>
+							<reportElement x="0" y="0" width="70" height="20" forecolor="#FFFFFF" uuid="d263ab62-45bb-425e-bf53-44c41afcd7e5"/>
+							<textFieldExpression><![CDATA[$V{IdProducto_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+			</crosstab>
+		</band>
+	</summary>
+</jasperReport>

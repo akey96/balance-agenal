@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_Letter" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fb19defd-83e0-4525-a702-0f5754150611">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="AGENAL development"/>
+	<queryString language="SQL">
+		<![CDATA[select * from importation_spreadsheets where customer_id = 23;]]>
+	</queryString>
+	<field name="id" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="issued_in_department" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="issued_in_department"/>
+		<property name="com.jaspersoft.studio.field.label" value="issued_in_department"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="issued_in_department_short" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="issued_in_department_short"/>
+		<property name="com.jaspersoft.studio.field.label" value="issued_in_department_short"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="branch_identifier" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="branch_identifier"/>
+		<property name="com.jaspersoft.studio.field.label" value="branch_identifier"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="issued_in_year" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="issued_in_year"/>
+		<property name="com.jaspersoft.studio.field.label" value="issued_in_year"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="assigned_number" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="assigned_number"/>
+		<property name="com.jaspersoft.studio.field.label" value="assigned_number"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="issued_date" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="issued_date"/>
+		<property name="com.jaspersoft.studio.field.label" value="issued_date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="expedient_number" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="expedient_number"/>
+		<property name="com.jaspersoft.studio.field.label" value="expedient_number"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="order" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="order"/>
+		<property name="com.jaspersoft.studio.field.label" value="order"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="supplier" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="supplier"/>
+		<property name="com.jaspersoft.studio.field.label" value="supplier"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="product" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="product"/>
+		<property name="com.jaspersoft.studio.field.label" value="product"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="order_invoice" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="order_invoice"/>
+		<property name="com.jaspersoft.studio.field.label" value="order_invoice"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="statement_number" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="statement_number"/>
+		<property name="com.jaspersoft.studio.field.label" value="statement_number"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="folio_number" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="folio_number"/>
+		<property name="com.jaspersoft.studio.field.label" value="folio_number"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="fob_usd" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="fob_usd"/>
+		<property name="com.jaspersoft.studio.field.label" value="fob_usd"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="cif_usd" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="cif_usd"/>
+		<property name="com.jaspersoft.studio.field.label" value="cif_usd"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="cif" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="cif"/>
+		<property name="com.jaspersoft.studio.field.label" value="cif"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="issued_with_customer_ci" class="java.lang.Boolean">
+		<property name="com.jaspersoft.studio.field.name" value="issued_with_customer_ci"/>
+		<property name="com.jaspersoft.studio.field.label" value="issued_with_customer_ci"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="spreadsheet_total_amount" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="spreadsheet_total_amount"/>
+		<property name="com.jaspersoft.studio.field.label" value="spreadsheet_total_amount"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="spreadsheet_total_amount_str" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="spreadsheet_total_amount_str"/>
+		<property name="com.jaspersoft.studio.field.label" value="spreadsheet_total_amount_str"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="down_payment" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="down_payment"/>
+		<property name="com.jaspersoft.studio.field.label" value="down_payment"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="period_id" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="period_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="period_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="customer_id" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="customer_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="customer_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="created_at" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="created_at"/>
+		<property name="com.jaspersoft.studio.field.label" value="created_at"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="updated_at" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="updated_at"/>
+		<property name="com.jaspersoft.studio.field.label" value="updated_at"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="deleted_at" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="deleted_at"/>
+		<property name="com.jaspersoft.studio.field.label" value="deleted_at"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="invoice_id" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="invoice_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="invoice_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="created_by" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="created_by"/>
+		<property name="com.jaspersoft.studio.field.label" value="created_by"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="updated_by" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="updated_by"/>
+		<property name="com.jaspersoft.studio.field.label" value="updated_by"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="deleted_by" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="deleted_by"/>
+		<property name="com.jaspersoft.studio.field.label" value="deleted_by"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<field name="is_closed" class="java.lang.Boolean">
+		<property name="com.jaspersoft.studio.field.name" value="is_closed"/>
+		<property name="com.jaspersoft.studio.field.label" value="is_closed"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="importation_spreadsheets"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
