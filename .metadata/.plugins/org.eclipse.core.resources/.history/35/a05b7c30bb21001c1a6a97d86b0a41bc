@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_Letter" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8e9a8fb3-919b-46bc-94d4-0dd60a122244">
-	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value="cHJvZHVjdG8gLDE1LDE1LDZiZTcwMzY2LTlkODktNDFmMS05MjFkLTc3NTUzMWYzOWEzNTs="/>
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Crosstab DB Conecction Fruta "/>
 	<style name="Crosstab_CH" mode="Opaque" backcolor="#F0F8FF">
 		<box>
@@ -97,46 +97,6 @@
 FROM producto
 GROUP BY fechas]]>
 	</queryString>
-	<field name="IdProducto" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="IdProducto"/>
-		<property name="com.jaspersoft.studio.field.label" value="IdProducto"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="producto"/>
-		<fieldDescription><![CDATA[]]></fieldDescription>
-	</field>
-	<field name="NombreProducto" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="NombreProducto"/>
-		<property name="com.jaspersoft.studio.field.label" value="NombreProducto"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="producto"/>
-		<fieldDescription><![CDATA[]]></fieldDescription>
-	</field>
-	<field name="Proveedor" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="Proveedor"/>
-		<property name="com.jaspersoft.studio.field.label" value="Proveedor"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="producto"/>
-		<fieldDescription><![CDATA[]]></fieldDescription>
-	</field>
-	<field name="Categoria" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="Categoria"/>
-		<property name="com.jaspersoft.studio.field.label" value="Categoria"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="producto"/>
-		<fieldDescription><![CDATA[]]></fieldDescription>
-	</field>
-	<field name="CantidadPorUnidad" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="CantidadPorUnidad"/>
-		<property name="com.jaspersoft.studio.field.label" value="CantidadPorUnidad"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="producto"/>
-		<fieldDescription><![CDATA[]]></fieldDescription>
-	</field>
-	<field name="PrecioUnidad" class="java.lang.Double">
-		<property name="com.jaspersoft.studio.field.name" value="PrecioUnidad"/>
-		<property name="com.jaspersoft.studio.field.label" value="PrecioUnidad"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="producto"/>
-		<fieldDescription><![CDATA[]]></fieldDescription>
-	</field>
-	<field name="fechas" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.name" value="fechas"/>
-		<property name="com.jaspersoft.studio.field.label" value="fechas"/>
-	</field>
 	<background>
 		<band splitType="Stretch"/>
 	</background>

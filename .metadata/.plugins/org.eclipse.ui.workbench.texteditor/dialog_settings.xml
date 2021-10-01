@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="Dataset2"/>
+		<item key="selection" value="Dataset1"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="Dataset2"/>
 			<item value="Dataset1"/>
+			<item value="datase"/>
+			<item value="Dataset2"/>
 			<item value="customer_id"/>
 			<item value="custome_id"/>
 			<item value="customer"/>
